@@ -1,5 +1,6 @@
 ﻿<?php
 $hotel[1]='Hotel Las Vegas';
+$logo[1]='logoLasVegas1.png';
 $color1[1]='amarillo';
 $color2[1]='negro';
 $color3[1]='tnegro';
@@ -20,6 +21,7 @@ $serv[1]=array(	array('Desayuno','fa-coffee'),
 			);
 
 $hotel[2]='Hotel Las Vegas 2';
+$logo[2]='logoLasVegas2.png';
 $color1[2]='negro';
 $color2[2]='amarillo';
 $color3[2]='tamarillo';
@@ -40,11 +42,12 @@ $serv[2]=array(	array('Desayuno','fa-coffee'),
 			);
 
 $hotel[3]='Hotel Refugio de Luna';
+$logo[3]='logoRefugioDeLuna.png';
 $color1[3]='rojo';
 $color2[3]='blanco';
 $color3[3]='tblanco';
 $color4[3]='enviar';
-$fondo[3]='fondoLasVegas2-1.jpg';
+$fondo[3]='fondoRefugio.jpg';
 $foto[3]=array("lv3-001.jpg","lv3-002.jpg","lv3-003.jpg","lv3-004.jpg","lv3-005.jpg","lv3-006.jpg","lv3-007.jpg","lv3-008.jpg","lv3-009.jpg","lv3-010.jpg","lv3-011.jpg","lv3-012.jpg","lv3-013.jpg","lv3-014.jpg","lv3-015.jpg","lv3-016.jpg","lv3-017.jpg");
 $text[3]=array("lv3-001.jpg","lv3-002.jpg","lv3-003.jpg","lv3-004.jpg","lv3-005.jpg","lv3-006.jpg","lv3-007.jpg","lv3-008.jpg","lv3-009.jpg","lv3-010.jpg","lv3-011.jpg","lv3-012.jpg","lv3-013.jpg","lv3-014.jpg","lv3-015.jpg","lv3-016.jpg","lv3-017.jpg");
 $mapa[3]='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9533006913844!2d-64.50945724939149!3d-31.415412703256738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6615b7ba1f31%3A0x3536eb8dfc94a222!2sHotel+Refugio+de+Luna!5e0!3m2!1ses-419!2sar!4v1452549545020';

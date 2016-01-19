@@ -9,7 +9,7 @@
 		margin-bottom:40px;
 
 	}
-	.logo{min-height: calc(100vh - 40px);}
+	.logo{min-height: calc(80vh - 40px);}
 
 header nav {
 	background: #fff;/*transparent; #3498db;*/

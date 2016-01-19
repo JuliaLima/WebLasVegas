@@ -32,88 +32,93 @@ $color4=$color4[$hot];
 .tnegro{color: #000; z-index:10;}
 .trojo{color: #9b1b20;}
 
-
 .margensup {height:50px;}
 .enviar{
-background-color: #f3c517 !important;
-color: #000 !important;
+	background-color: #f3c517 !important;
+	color: #000 !important;
 }
 .enviar: hover{
-background-color: #f5c719 !important;
-color: #333 !important;
+	background-color: #f5c719 !important;
+	color: #333 !important;
 }
 .enviar1{
-background-color: #000 !important;
-color: #f3c517 !important;
+	background-color: #000 !important;
+	color: #f3c517 !important;
 }
 .enviar1: hover{
-background-color: #9b1b20 !important;
-color: #333 !important;
+	background-color: #9b1b20 !important;
+	color: #333 !important;
 }
 
 .expande{width:100%; height: 4px;}
 .centrar{text-align:center;}
 .seleccionado{
-color: #f3c517;
-background-color: #000;}
-.noseleccionado{
-color: #000;
-background-color: #f3c517;}
-.fijo {
-position: fixed;
-bottom: 0;
-//right: 0;
-width: 100%;
-//background-color: white;
+	color: #f3c517;
+	background-color: #000;
 }
-header{
-	margin-top: -1.5em;
-	min-height: 100vh;
-background: url(img/<?php echo $fondo[$hot]; ?>)  no-repeat center center fixed !important;
--webkit-background-size: cover !important;
--moz-background-size: cover !important;
--o-background-size: cover !important;
-background-size: cover !important;
+.noseleccionado{
+	color: #000;
+	background-color: #f3c517;
 }
 
-.vcentrar{margin-top:calc(50vh - 140px);
-text-align: center;}
+header{
+	margin-top: -1.5em;
+	min-height: 80vh;
+	background: url(img/<?php echo $fondo[$hot]; ?>)  no-repeat center center fixed !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+
+.vcentrar{
+	margin-top:calc(40vh - 140px);
+	text-align: center;
+}
 .button{
-background: transparent !important;/**/
-color: #000;
+	background: transparent !important;/**/
+	color: #000;
 }
 .menu a{color:#000;}
 .button:hover{
-color: #f7c713 !important;
+	color: #f7c713 !important;
 }
-form > .enviar{	background-color: #f3c517 !important;
-color: #000 !important;}
-form > .enviar:hover{background-color: #fff !important;
-color: #f00 !important;}
+form > .enviar{
+	background-color: #f3c517 !important;
+	color: #000 !important;
+}
+form > .enviar:hover{
+	background-color: #fff !important;
+	color: #f00 !important;
+}
+form > .enviar1{
+	background-color: #000 !important;
+	color: #f3c517 !important;
+}
+form > .enviar1:hover{
+	background-color: #f00 !important;
+	color: #fff !important;
+}
 
-form > .enviar1{	background-color: #000 !important;
-color: #f3c517 !important;}
-form > .enviar1:hover{background-color: #f00 !important;
-color: #fff !important;
-}
-/**/
 .selecc{
-color: #f7c713 !important;
-border-bottom-style: solid !important;
-border-bottom-color: #f7c713 !important;
-border-bottom-width: 5px !important;
+	color: #f7c713 !important;
+	border-bottom-style: solid !important;
+	border-bottom-color: #f7c713 !important;
+	border-bottom-width: 5px !important;
 }
 .seleccno{
-color: #fff;
+	color: #fff;
 }
 .transparente{background: transparent !important;}
 .contenedor {
-//width: 100% !important;
-max-width: 1000px;
-margin:auto !important;
+	//width: 100% !important;
+	max-width: 1000px;
+	margin:auto !important;
 }
-.fondo {width: 100% !important;
-		min-height: 100vh;}
+.fondo {
+	width: 100% !important;
+	min-height: 80vh;
+}
 
 </style>
 <?php
@@ -142,7 +147,7 @@ $rutaFoundation='foundation-6/';
 				<div class="large-12 columns vcentrar">
 					<!--<p align="center"></p>-->
 					<?php
-					echo '<br /><img src="img/logoLasVegas'.$hot.'.png">';
+					echo '<br /><img src="img/'.$logo[$hot].'">';
 					?>
 					
 				</div>
@@ -260,7 +265,7 @@ $rutaFoundation='foundation-6/';
 <div class="row <?php echo $color2; ?>">
 <div class="small-12 medium-9 columns small-centered centrar">
 <br class="margensup"/><br class="margensup"/>
-<h2>CONSULTA</h2><h6>Ante cualquier inquitud, complete el formulario de consulta, o<br /> comunicarse a <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h6>
+<h2>CONSULTA</h2><h6>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun@iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h6>
 
 </div>
 </div>
