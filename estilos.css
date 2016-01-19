@@ -1,0 +1,57 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body {
+	background:#f2f2f2;
+}
+
+.contenedor {
+	width: 100%;
+	max-width:1000px;
+	margin:auto;
+}
+
+	.contenedor p {
+		margin-bottom:40px;
+	}
+
+header nav {
+	background:#3498db;
+	margin-bottom:10px;
+}
+
+	header nav ul {
+		list-style: none;
+		overflow: hidden;
+	}
+
+		header nav ul li {
+			float: left;
+		}
+
+			header nav ul li a {
+				display: block;
+				padding:20px;
+				color:#fff;
+				text-decoration: none;
+			}
+
+			header nav ul li a:hover {
+				background:#2980b9;
+			}
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	/*left:0;*/
+	/*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}

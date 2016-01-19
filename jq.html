@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Ejemplo de cargar una pagina en un div</title>
+    <script type='text/javascript' src='foundation-6/js/vendor/jquery.min.js'></script>
+    <style type='text/css'>
+        .link       {cursor:pointer;text-decoration:underline;color:#00f;}
+        .enlace     {color:#00f;}
+        #contenido  {border:1px #bababa solid;min-height:50px;}
+        .clock      {position:relative;left:50%;top:50%;width:36px;height:36px;padding:20px;}
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo de cargar una pagina en un div</h1>
+    <div class='link' onclick="cargarContenido('pagina1.html')">pulsa aqui para cargar <b>pagina1.html</b> dentro del div <b>contenido</b></div>
+    <div class='link' onclick="cargarContenido('pagina2.html')">pulsa aqui para cargar <b>pagina2.html</b> dentro del div <b>contenido</b></div>
+    <div class='link' onclick="cargarContenidoReloj('enviar1.php')">pulsa aqui para cargar <b>pagina3.php</b> dentro del div <b>contenido</b>. Se muestra un reloj mientras se carga.</div>
+    <div id='contenido'></div>
+    
+    <script type='text/javascript'>
+    // Funcion para cargar un contenido en un div
+    function cargarContenido(pagina)
+    {
+        // cargamos la pagina pagina.html en el div contenido
+        $("#contenido").load(pagina);
+    }
+    // Funcion para cargar un contenido en un div mostrando un reloj de arena
+    function cargarContenidoReloj(pagina)
+    {
+        // cargamos el icono en el div donde ira el contenido
+        $("#contenido").html("<img src='clock.gif' class='clock' border='0' />");
+        // cargamos la pagina pagina3.php en el div contenido
+        $("#contenido").load(pagina);
+    }
+    </script>
+</body>
+</html>
