@@ -79,10 +79,12 @@ header{
 	text-align: center;
 }
 .button{
-	background: transparent !important;/**/
+	background: #fff !important;/**/
 	color: #000;
 }
-.menu a{color:#000;}
+.menu a{color:#000;
+background: #fff !important;
+}
 .button:hover{
 	color: #f7c713 !important;
 }
@@ -159,54 +161,53 @@ $rutaFoundation='foundation-6/';
 				</div>
 			</div>
 		</div>
-		<div class="fondo1">
+
 		<nav class="menu" id="menu">
 			<!-- MENU MEDIUM Y LARGE -->
-			<div id="m" class="rows show-for-medium transparente">
-				<div class="medium-2 large-2 columns transparente">
+			<div id="m" class="rows show-for-medium blanco">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="<?php echo $index;?>" class="button expanded seleccno">Inicio</a>
 				</div>
-				<div class="medium-2 large-2 columns transparente">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="#servicios" class="button expanded seleccno">Servicios</a>
 				</div>
-				<div class="medium-2 large-2 columns transparente">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="#slide" class="button expanded seleccno">Galería</a>
 				</div>
-				<div class="medium-2 large-2 columns transparente">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="#ubicacion" class="button expanded seleccno">Ubicación</a>
 				</div>
-				<div class="medium-2 large-2 columns transparente">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="#consulta" class="button expanded seleccno">Consulta</a>
 				</div>
-				<div class="medium-2 large-2 columns transparente">
+				<div class="medium-2 large-2 columns blanco">
 					<a href="#features" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
 				</div>
 			</div>
 			<!-- MENU SMALL -->
-			<div id="ms" class="rows show-for-small-only">
+			<div id="ms" class="rows show-for-small-only blanco">
 				<div class="small-12">
-					<div class="small-2 columns tnegro">
-					<a href="<?php echo $index;?>" class="button expanded seleccno"><i class="fa fa-home"></i></a>
+					<div class="small-2 columns blanco">
+					<a href="<?php echo $index;?>" class="button expanded seleccno"><i class="fa fa-home" style="    margin-left: -.5em;"></i></a>
 				</div>
-				<div class="  small-2 columns transparente">
-					<a href="#servicios" class="button expanded seleccno"><i class="fa fa-info-circle"></i></a>
+				<div class="  small-2 columns blanco">
+					<a href="#servicios" class="button expanded seleccno"><i class="fa fa-info-circle" style="    margin-left: -.5em;"></i></a>
 				</div>
-				<div class="  small-2 columns transparente">
-					<a href="#slide" class="button expanded seleccno"><i class="fa fa-camera"></i></a>
+				<div class="  small-2 columns blanco">
+					<a href="#slide" class="button expanded seleccno"><i class="fa fa-camera" style="    margin-left: -.5em;"></i></a>
 				</div>
-				<div class="  small-2 columns transparente">
-					<a href="#ubicacion" class="button expanded seleccno"><i class="fa fa-map-marker"></i></a>
+				<div class="  small-2 columns blanco">
+					<a href="#ubicacion" class="button expanded seleccno"><i class="fa fa-map-marker" style="    margin-left: -.5em;"></i></a>
 				</div>
-				<div class="  small-2 columns transparente">
-					<a href="#consulta" class="button expanded seleccno"><i class="fa fa-envelope"></i></a>
+				<div class="  small-2 columns blanco">
+					<a href="#consulta" class="button expanded seleccno"><i class="fa fa-envelope" style="    margin-left: -.5em;"></i></a>
 				</div>
-				<div class="  small-2 columns transparente">
-					<a href="#features" class="button expanded seleccno"><i class="fa fa-facebook-square"></i></a>
+				<div class="  small-2 columns blanco">
+					<a href="#features" class="button expanded seleccno"><i class="fa fa-facebook-square" style="    margin-left: -.5em;"></i></a>
 				</div>
 				</div>
 			</div>
 		</nav>
-		</div>
 	</div>
 </header>
 <div class="fondo <?php echo $color1; ?>">
