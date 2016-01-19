@@ -234,18 +234,7 @@ $rutaFoundation='foundation-6/';
 </tbody>
 </table>
 </div></div>
-<!-- servicios en divs -->
-<div class="row"><div class="small-10  small-centered columns">
-<table class="tablaservicios">
-<tbody class="<?php echo $color1; ?>">
-<?php
-	for ($i=0; $i < count(($serv[$hot])); $i++){
-		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-2x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
-	}
-?>
-</tbody>
-</table>
-</div></div>
+
 </div>
 
 </div>
