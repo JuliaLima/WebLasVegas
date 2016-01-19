@@ -22,10 +22,13 @@ $color4=$color4[$hot];
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 <style>
+
+tbody tr:nth-child(even) {background-color: transparent !important;}
+
 /**/
-.negro {background-color: #000; color: #fff;}
-.amarillo{background-color: #f3c517; color: #000;}
-.rojo{background-color: #9b1b20; color: #fff;}
+.negro {background-color: #000; color: #fff; border: none !important;}
+.amarillo{background-color: #f3c517; color: #000; border: none !important;}
+.rojo{background-color: #9b1b20; color: #fff; border: none !important;}
 .blanco{background-color: #fff; color: #000;}
 .tamarillo{color: #f3c517;}
 .tblanco{color: #fff;}
@@ -119,6 +122,9 @@ form > .enviar1:hover{
 	width: 100% !important;
 	min-height: 80vh;
 }
+.fondo1 {
+	width: 100% !important;
+}
 
 </style>
 <?php
@@ -153,6 +159,7 @@ $rutaFoundation='foundation-6/';
 				</div>
 			</div>
 		</div>
+		<div class="fondo1">
 		<nav class="menu" id="menu">
 			<!-- MENU MEDIUM Y LARGE -->
 			<div id="m" class="rows show-for-medium transparente">
@@ -199,6 +206,7 @@ $rutaFoundation='foundation-6/';
 				</div>
 			</div>
 		</nav>
+		</div>
 	</div>
 </header>
 <div class="fondo <?php echo $color1; ?>">
@@ -214,12 +222,29 @@ $rutaFoundation='foundation-6/';
 <h4 class="centrar">Hotel Las vegas ofrece los siguientes servicios para que su estadía en nuestra casa sea de su agrado</h4>
 </div></div>
 <br />
+<!-- servicios en tabla -->
 <div class="row"><div class="small-10  small-centered columns">
+<table class="tablaservicios">
+<tbody class="<?php echo $color1; ?>">
 <?php
 	for ($i=0; $i < count(($serv[$hot])); $i++){
-		echo'<i class="fa '.$serv[3][$i][1].' fa-2x '.$color3.'"></i> '.$serv[3][$i][0].'<br />';
+		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-2x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
 	}
 ?>
+</tbody>
+</table>
+</div></div>
+<!-- servicios en divs -->
+<div class="row"><div class="small-10  small-centered columns">
+<table class="tablaservicios">
+<tbody class="<?php echo $color1; ?>">
+<?php
+	for ($i=0; $i < count(($serv[$hot])); $i++){
+		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-2x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
+	}
+?>
+</tbody>
+</table>
 </div></div>
 </div>
 
@@ -234,6 +259,7 @@ $rutaFoundation='foundation-6/';
 <div class="row <?php echo $color2; ?>">
 <div class="large-12 columns">
 <?php include ("slide.php"); ?>
+<br class="margensup"/><br class="margensup"/>
 </div>
 
 </div>
@@ -251,7 +277,7 @@ $rutaFoundation='foundation-6/';
 <div class="flex-video widescreen">
 <iframe src="<?php echo $mapa[$hot];?>" width="1000" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<h6 class="centrar"> <?php echo $direccion[$hot];?> - Villa Carlos Paz<br />Coordenadas GPS Latitud:<?php echo $coordenadax[$hot];?> Longuitud: <?php echo $coordenaday[$hot];?></h6>
+<h6 class="centrar" style="padding-top: 2em; padding-bottom: 3em"> <?php echo $direccion[$hot];?> - Villa Carlos Paz<br />Coordenadas GPS Latitud:<?php echo $coordenadax[$hot];?> Longuitud: <?php echo $coordenaday[$hot];?></h6>
 </div>
 
 </div>
@@ -265,7 +291,7 @@ $rutaFoundation='foundation-6/';
 <div class="row <?php echo $color2; ?>">
 <div class="small-12 medium-9 columns small-centered centrar">
 <br class="margensup"/><br class="margensup"/>
-<h2>CONSULTA</h2><h6>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun@iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h6>
+<h2>CONSULTA</h2><h6>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h6>
 
 </div>
 </div>
