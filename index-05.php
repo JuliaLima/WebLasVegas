@@ -45,8 +45,9 @@ background-size: cover !important;
   bottom: 0;
   //right: 0;
   width: 100%;
-
+  padding: 1rem;
 }
+
 .radio { 
 /* Firefox 3.5 */
 -moz-border-radius-topleft: 0px;
@@ -124,21 +125,18 @@ $rutaFoundation='foundation-6/';
 </div>
 
 <!-- SEPARADOR -->
-<div class="row">
+<!--<div class="row">
 	<div class="small-12 columns">
 		<img src="img/lineas.png" class="expande">
 	</div>
-</div>
+</div>-->
 
 <!-- CUERPO -->
 <div class="row">
 	<div class="small-12 small-centered large-7 columns centrar tblanco">
-	
-	
-		<!--<h1>Bienvenidos</h1>
+		<h2>Bienvenidos</h2>
 		<h5>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h5>
-	</div>-->
-
+	</div>
 </div>
 </header>
 <div class="row show-for-medium" id="cuerpo">
@@ -175,7 +173,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Hotel Las Vegas - Villa Carlos paz - Año 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Grupo Las Vegas - Villa Carlos paz - Año 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
