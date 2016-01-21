@@ -26,7 +26,7 @@ $color4=$color4[$hot];
 tbody tr:nth-child(even) {background-color: transparent !important;}
 
 /**/
-.negro {background-color: #000; color: #fff; border: none !important;}
+.negro {background-color: #292222; color: #fff; border: none !important;}
 .amarillo{background-color: #f3c517; color: #000; border: none !important;}
 .rojo{background-color: #9b1b20; color: #fff; border: none !important;}
 .blanco{background-color: #fff; color: #000;}
@@ -128,6 +128,13 @@ form > .enviar1:hover{
 	width: 100% !important;
 }
 
+nav{
+	position: fixed;
+	width: 100vw;
+	z-index: 1000;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
 </style>
 <?php
 $rutaFoundation='foundation-6/';
@@ -149,38 +156,25 @@ $rutaFoundation='foundation-6/';
 
 
 </head>
-<body><header>
-	<div class="contenedor">
-		<div class="logo">
-			<!-- CABECERA -->
-			<div class="row">
-				<div class="large-12 columns vcentrar">
-					<!--<p align="center"></p>-->
-					<?php
-					echo '<br /><img src="img/'.$logo[$hot].'">';
-					?>
-					
-				</div>
-			</div>
-		</div>
-
-		<nav class="menu" id="menu">
+<body>
+<header>
+	<nav class="menu" id="menu">
 			<!-- MENU MEDIUM Y LARGE -->
 			<div id="m" class="rows show-for-medium blanco">
 				<div class="medium-2 large-2 columns blanco">
-					<a href="<?php echo $index;?>" class="button expanded seleccno">Inicio</a>
+					<a href="<?php echo $index;?>" class="button expanded seleccno">INICIO</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
-					<a href="#servicios" class="button expanded seleccno">Servicios</a>
+					<a href="#servicios" class="button expanded seleccno">SERVICIOS</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
-					<a href="#slide" class="button expanded seleccno">Galería</a>
+					<a href="#slide" class="button expanded seleccno">GALER&Iacute;A</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
-					<a href="#ubicacion" class="button expanded seleccno">Ubicación</a>
+					<a href="#ubicacion" class="button expanded seleccno">UBICACI&Oacute;N</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
-					<a href="#consulta" class="button expanded seleccno">Consulta</a>
+					<a href="#consulta" class="button expanded seleccno">CONSULTA</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
 					<a href="#features" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
@@ -211,6 +205,21 @@ $rutaFoundation='foundation-6/';
 			</div>
 		</nav>
 	</div>
+	
+	<div class="contenedor">
+		<div class="logo">
+			<!-- CABECERA -->
+			<div class="row">
+				<div class="large-12 columns vcentrar">
+					<!--<p align="center"></p>-->
+					<?php
+					echo '<br /><img src="img/'.$logo[$hot].'">';
+					?>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
 <div class="fondo <?php echo $color1; ?>">
 <div class="contenedor">
@@ -221,8 +230,8 @@ $rutaFoundation='foundation-6/';
 <div class="small-12 columns <?php echo $color1; ?>">
 <div class="row"><div class="small-9  small-centered columns">
 <br class="margensup"/><br class="margensup"/>
-<h2 class="centrar">SERVICIOS</h2>
-<h4 class="centrar">Hotel Las vegas ofrece los siguientes servicios para que su estadía en nuestra casa sea de su agrado</h4>
+<h1 class="centrar">SERVICIOS</h1>
+<h5 class="centrar">Hotel Las vegas ofrece los siguientes servicios para que su estadía en nuestra casa sea de su agrado</h5>
 </div></div>
 <br />
 <!-- servicios en tabla -->
@@ -231,7 +240,7 @@ $rutaFoundation='foundation-6/';
 <tbody class="<?php echo $color1; ?>">
 <?php
 	for ($i=0; $i < count(($serv[$hot])); $i++){
-		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-2x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
+		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-3x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
 	}
 ?>
 </tbody>
@@ -265,7 +274,7 @@ $rutaFoundation='foundation-6/';
 <div class="row <?php echo $color1; ?>">
 <div class="large-12 columns centrar">
 <br class="margensup"/><br class="margensup"/>
-<h2 >UBICACI&Oacute;N</h2>
+<h1>UBICACI&Oacute;N</h1> </br>
 <div class="flex-video widescreen">
 <iframe src="<?php echo $mapa[$hot];?>" width="1000" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
@@ -283,7 +292,7 @@ $rutaFoundation='foundation-6/';
 <div class="row <?php echo $color2; ?>">
 <div class="small-12 medium-9 columns small-centered centrar">
 <br class="margensup"/><br class="margensup"/>
-<h2>CONSULTA</h2><h6>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h6>
+<h1>CONSULTA</h1><h5>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h5>
 
 </div>
 </div>
