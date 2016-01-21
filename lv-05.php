@@ -11,7 +11,7 @@ else {
 	$hot = 1;}
 include ("variables.php");
 // PAGINA DE INICIO INDEX
-$index='index-05.php';
+$index='index-ju.php';
 $color1=$color1[$hot];
 $color2=$color2[$hot];
 $color3=$color3[$hot];
