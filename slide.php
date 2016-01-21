@@ -80,7 +80,7 @@ body {
 <!-- <div class="row">
 	<div class="twelve column" >-->
 	<br class="margensup"/><br class="margensup"/>
-	<h2 class="centrar">GALERÍA DE FOTOS</h2>
+	<h1 class="centrar">GALERÍA DE FOTOS</h1>
 		<div id="sync1" class="owl-carousel">
 		<!-- slide grande -->
 		<?php
