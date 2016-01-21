@@ -10,7 +10,7 @@
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 <style>
-.negro {background-color: #000;}
+.negro {background-color: #292222;}
 .amarillo{background-color: #f3c517;}
 .tamarillo{color: #f3c517;}
 .tblanco{color: #fff;}
@@ -135,9 +135,9 @@ $rutaFoundation='foundation-6/';
 	<div class="small-12 small-centered large-7 columns centrar tblanco">
 	
 	
-		<h2>Bienvenidos</h2>
-		<h4>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h4>
-	</div>
+		<!--<h1>Bienvenidos</h1>
+		<h5>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h5>
+	</div>-->
 
 </div>
 </header>
