@@ -11,7 +11,7 @@ else {
 	$hot = 1;}
 include ("variables.php");
 // PAGINA DE INICIO INDEX
-$index='index-1.php';
+$index='index-05.php';
 $color1=$color1[$hot];
 $color2=$color2[$hot];
 $color3=$color3[$hot];
@@ -143,7 +143,9 @@ $rutaFoundation='foundation-6/';
 <link rel="stylesheet" href="estilos1.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="main.js"></script>
+<!--
 <script src="js/blur.js"></script>
+-->
 
 
 </head>
@@ -322,8 +324,10 @@ $rutaFoundation='foundation-6/';
     </script>
 <!-- Compressed JavaScript -->
 <script src="<?php echo $rutaFoundation;?>js/foundation.min.js"></script>
+<!--
 <script src="<?php echo $rutaFoundation;?>js/foundation.sticky.js"></script>
 <script src="<?php echo $rutaFoundation;?>js/foundation.core.js"></script>
+-->
 <script>
 function menu(){
 	var id = '#m';
@@ -332,6 +336,7 @@ function menu(){
     //$(id1).css('height', $($(id1).children()[1]).css('height'));
 }
 $(document).ready(menu)
+
 </script>
 
 </html>
