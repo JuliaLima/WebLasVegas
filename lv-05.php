@@ -128,6 +128,11 @@ form > .enviar1:hover{
 	width: 100% !important;
 }
 
+.fondo2 {
+	width: 100% !important;
+	min-height: 100vh;
+}
+
 nav{
 	position: fixed;
 	width: 100vw;
@@ -509,7 +514,7 @@ $(document).ready(function() {
 </div>
 </div>
 <a name="consulta"></a>
-<div class="fondo <?php echo $color2; ?>">
+<div class="fondo2 <?php echo $color2; ?>">
 <div class="contenedor">
 <!-- CONSULTA -->
 
