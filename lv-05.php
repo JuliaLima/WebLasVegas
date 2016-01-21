@@ -66,7 +66,7 @@ tbody tr:nth-child(even) {background-color: transparent !important;}
 
 header{
 	margin-top: -1.5em;
-	min-height: 80vh;
+	min-height: 100vh;
 	background: url(img/<?php echo $fondo[$hot]; ?>)  no-repeat center center fixed !important;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
@@ -138,6 +138,13 @@ nav{
 	width: 100vw;
 	z-index: 1000;
 	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+#flechitaHeader{
+	color: white;
+	text-align: center;
+	padding-top: 30vh;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 
 </style>
@@ -223,6 +230,10 @@ $rutaFoundation='foundation-6/';
 					
 				</div>
 			</div>
+			<div id="flechitaHeader">
+					<h6>Bienvenido!</h6>
+					<i class="fa fa-chevron-down"></i>
+				</div>
 		</div>
 	</div>
 </header>
@@ -237,7 +248,7 @@ $rutaFoundation='foundation-6/';
 <div class="row"><div class="small-9  small-centered columns">
 <!--<br class="margensup"/><br class="margensup"/>-->
 <h1 class="centrar">SERVICIOS</h1>
-<h5 class="centrar">Hotel Las vegas ofrece los siguientes servicios para que su estadía en nuestra casa sea de su agrado</h5>
+<h5 class="centrar">El hotel ofrece los siguientes servicios para que su estadía en nuestra casa sea de su agrado</h5>
 </div></div>
 <br />
 <!-- servicios en tabla -->
@@ -352,7 +363,8 @@ body {
 		<!-- slide grande -->
 		<?php
 			for ($i=0; $i < count(($foto[$hot])); $i++){
-				echo '<div class="item"><span class="show-for-medium"><img src="img/lv'.$hot.'/'.$foto[$hot][$i].'"></span><span class="show-for-small-only"><img src="img/lv'.$hot.'/cel/'.$foto[$hot][$i].'"></span><br />'.$i.'-'.$text[$hot][$i].'</div>';
+				echo '<div class="item"><span class="show-for-medium"><img src="img/lv'.$hot.'/'.$foto[$hot][$i].'"></span><span class="show-for-small-only"><img src="img/lv'.$hot.'/cel/'.$foto[$hot][$i].'"></span></div>';
+				/*<br />'.$i.'-'.$text[$hot][$i].''*/
 			}
 		?>
 		</div>
