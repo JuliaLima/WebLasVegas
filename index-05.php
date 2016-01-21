@@ -10,7 +10,7 @@
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 <style>
-.negro {background-color: #292222;}
+.negro {background-color: #000;}
 .amarillo{background-color: #f3c517;}
 .tamarillo{color: #f3c517;}
 .tblanco{color: #fff;}
@@ -125,18 +125,19 @@ $rutaFoundation='foundation-6/';
 </div>
 
 <!-- SEPARADOR -->
-<!--<div class="row">
+<div class="row">
 	<div class="small-12 columns">
 		<img src="img/lineas.png" class="expande">
 	</div>
-</div>-->
+</div>
 
 <!-- CUERPO -->
 <div class="row">
 	<div class="small-12 small-centered large-7 columns centrar tblanco">
-		<h2>Bienvenidos</h2>
-		<h5>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h5>
+	<h2>Bienvenidos</h2>
+		<h4>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h4>
 	</div>
+
 </div>
 </header>
 <div class="row show-for-medium" id="cuerpo">
@@ -165,7 +166,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Hotel Las Vegas - Villa Carlos paz - Año 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Hotel Las Vegas - Villa Carlos paz - A&ntilde;o 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
@@ -173,7 +174,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Grupo Las Vegas - Villa Carlos paz - Año 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Hotel Las Vegas - Villa Carlos paz - A&ntilde;o 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
