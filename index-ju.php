@@ -11,7 +11,6 @@
 
 <style>
 
-
 body{
 background: url(img/vcp.jpg) no-repeat center center fixed !important;
 -webkit-background-size: cover !important;
@@ -28,8 +27,6 @@ background-size: cover !important;
 .centrar{text-align:center;
 }
 
-
-
 .fijo {
   position: fixed;
   bottom: 0;
@@ -38,29 +35,54 @@ background-size: cover !important;
   padding: 1rem;
 }
 
-.margen{margin-top: 2em;
-margin-bottom: 2em;}
+.margen{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
 span {
-	border: white solid 3px;
-	padding: 1rem 2rem;
+	/*border: white solid 2px;*/
+	/*padding-top: 2.5rem;*/
 	//margin: 3rem;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 	//text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 	cursor: pointer;
 	color: #fff;
-	background-color: rgba(255, 255, 255, 0.5);
-
-
+	//background-color: rgba(255, 255, 255, 0.5);
 }
+
 span:hover {
 	color: #f3c517;
-	border-color: #f3c517;
-	background-color: rgba(0, 0, 0, 0.5);
+	//border-color: #f3c517;
+	//background-color: rgba(0, 0, 0, 0.5);
 	//text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
 }
-.margensup{margin-top: 3em;
-margin-bottom: 2em;}
+
+span i{
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+span i:hover{
+	color: #f3c517;
+}
+
+.margensup{
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+div h4{
+	margin-top: 12vh;
+	border-bottom: white dashed 1px;
+	padding-bottom: 1rem;
+}
+
+div div p img{
+	margin-top: 6vh;
+}
+
+
 </style>
 <?php
 $rutaFoundation='foundation-6/';
@@ -99,8 +121,7 @@ $rutaFoundation='foundation-6/';
 <!-- CUERPO -->
 <div class="row">
 	<div class="small-12 small-centered large-7 columns centrar tblanco">
-
-		<h5>Aquí podrá encontrar hoteles con la mejor atención y excelente ubicación en Villa Carlos Paz. No dude en consultarnos, estamos a su disposición!</h5>
+		<h4>Seleccione el hotel que desee</h4>
 	</div>
 
 </div>
@@ -108,34 +129,34 @@ $rutaFoundation='foundation-6/';
 <div class="row show-for-medium" id="cuerpo">
 	<div class="small-12 medium-4 columns centrar" id="col1">
 		<div id="im1">
-		<a href="lv-05.php?hot=1"><span>Hotel 1</span></a>
+		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 medium-4 columns centrar" id="col2">
 		<div id="im2">
-		<a href="lv-05.php?hot=2"><span>Hotel 2</span></a>
+		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas 2</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 medium-4 columns centrar " id="col3">
 		<div id="im3">
-		<a href="lv-05.php?hot=3"><span>Hotel 3</span></a>
+		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Refugio de Luna</h5></span></a>
 		</div>
 	</div>
 </div>
 <div class="row show-for-small-only" id="cuerpo">
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=1"><span>Hotel 1</span></a>
+		<a href="lv-05.php?hot=1"><span>Las Vegas</span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=2"><span>Hotel 2</span></a>
+		<a href="lv-05.php?hot=2"><span>Las Vegas 2</span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar ">
 		<div class="margensup">
-		<a href="lv-05.php?hot=3"><span>Hotel 3</span></a>
+		<a href="lv-05.php?hot=3"><span>Refugio de Luna</span></a>
 		</div>
 	</div>
 </div>
@@ -144,7 +165,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Hotel Las Vegas - Villa Carlos paz - A&ntilde;o 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Grupo Las Vegas - Villa Carlos paz - 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
@@ -152,7 +173,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Hotel Las Vegas - Villa Carlos paz - A&ntilde;o 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Grupo Las Vegas - Villa Carlos paz - 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
