@@ -146,17 +146,17 @@ $rutaFoundation='foundation-6/';
 <div class="row show-for-small-only" id="cuerpo">
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=1"><span>Las Vegas</span></a>
+		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=2"><span>Las Vegas 2</span></a>
+		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas 2</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar ">
 		<div class="margensup">
-		<a href="lv-05.php?hot=3"><span>Refugio de Luna</span></a>
+		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Refugio de Luna</h5></span></a>
 		</div>
 	</div>
 </div>
