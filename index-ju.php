@@ -42,18 +42,22 @@ background-size: cover !important;
 margin-bottom: 2em;}
 
 span {
-	border: white solid 2px;
+	border: white solid 3px;
 	padding: 1rem 2rem;
 	//margin: 3rem;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	//text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 	cursor: pointer;
 	color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
 
 
 }
 span:hover {
 	color: #f3c517;
 	border-color: #f3c517;
+	background-color: rgba(0, 0, 0, 0.5);
+	//text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
 }
 .margensup{margin-top: 3em;
 margin-bottom: 2em;}
