@@ -231,8 +231,8 @@ $rutaFoundation='foundation-6/';
 				</div>
 			</div>
 			<div id="flechitaHeader">
-					<h6>Bienvenido!</h6>
-					<i class="fa fa-chevron-down"></i>
+					<h5>Bienvenido!</h5>
+					<a href="#servicios" class="tblanco"><i class="fa fa-chevron-down fa-2x"></i></a>
 				</div>
 		</div>
 	</div>
