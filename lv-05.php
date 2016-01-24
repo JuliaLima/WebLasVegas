@@ -252,16 +252,42 @@ $rutaFoundation='foundation-6/';
 </div></div>
 <br />
 <!-- servicios en tabla -->
-<div class="row"><div class="small-10  small-centered columns">
-<table class="tablaservicios">
-<tbody class="<?php echo $color1; ?>">
-<?php
-	for ($i=0; $i < count(($serv[$hot])); $i++){
-		echo'<tr  class="<?php echo $color1; ?>"><td><i class="fa '.$serv[3][$i][1].' fa-3x '.$color3.'"></i></td><td>'.$serv[3][$i][0].'</td></tr>';
-	}
-?>
-</tbody>
-</table>
+<div class="row medium-unstack">
+	<div class="medium-6 columns">
+		<table class="tablaservicios">
+			<tbody class="<?php echo $color1; ?>">
+				<tr>
+					<th>
+						<h4>En el hotel</h4>
+					</th>
+				</tr>
+				<?php
+					for ($i=0; $i < count(($serv[$hot]['general'])); $i++){
+						echo '<tr><td class="<?php echo $color1; ?>"><i class="fa '.$serv[$hot]['general'][$i][1].' fa-3x '.$color3.'"></i></td>'.
+						'<td>'.$serv[$hot]['general'][$i][0].'</td></tr>';
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+	<div class="medium-6 columns">
+		<table class="tablaservicios">
+			<tbody class="<?php echo $color1; ?>">
+				<tr>
+					<th>
+						<h4>Habitaciones</h4>
+					</th>
+				</tr>
+				<?php
+					for ($i=0; $i < count(($serv[$hot]['habitaciones'])); $i++){
+						echo '<tr><td class="<?php echo $color1; ?>"><i class="fa '.$serv[$hot]['habitaciones'][$i][1].' fa-3x '.$color3.'"></i></td>'.
+						'<td>'.$serv[$hot]['habitaciones'][$i][0].'</td></tr>';
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+
 </div></div>
 
 </div>
