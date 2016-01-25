@@ -9,7 +9,12 @@
 		margin-bottom:40px;
 
 	}
-	.logo{min-height: calc(80vh - 40px);}
+	@media screen and (min-width: 500px){
+.logo{min-height: calc(80vh - 40px);}
+}
+	@media screen and (max-width: 500px){
+.logo{min-height: calc(60vh - 40px);}
+}	
 
 header nav {
 	background: #fff;/*transparent; #3498db;*/

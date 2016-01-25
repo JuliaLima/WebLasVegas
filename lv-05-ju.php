@@ -66,12 +66,21 @@ tbody tr:nth-child(even) {background-color: transparent !important;}
 
 header{
 	margin-top: -1.5em;
-	min-height: 100vh;
+
 	background: url(img/<?php echo $fondo[$hot]; ?>)  no-repeat center center fixed !important;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	-o-background-size: cover !important;
 	background-size: cover !important;
+}
+@media screen and (min-width: 500px){
+	header {min-height: 100vh;}
+}
+	
+@media handheld {
+header{
+	min-height: 40vh;
+}
 }
 
 .vcentrar{
@@ -170,7 +179,9 @@ $rutaFoundation='foundation-6/';
 
 </head>
 <body>
-<header>
+
+<header class="show-for-medium">
+
 	<nav class="menu" id="menu">
 			<!-- MENU MEDIUM Y LARGE -->
 			<div id="m" class="rows show-for-medium blanco">
@@ -193,8 +204,32 @@ $rutaFoundation='foundation-6/';
 					<a href="#features" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
 				</div>
 			</div>
+		</nav>
+	</div>
+	
+	<div class="contenedor">
+		<div class="logo">
+			<!-- CABECERA -->
+			<div class="row">
+				<div class="large-12 columns vcentrar">
+					<!--<p align="center"></p>-->
+					<?php
+					echo '<br /><img src="img/'.$logo[$hot].'">';
+					?>
+					
+				</div>
+			</div>
+			<div id="flechitaHeader" class="show-for-medium">
+					<h5>Bienvenido!</h5>
+					<a href="#servicios" class="tblanco"><i class="fa fa-chevron-down fa-2x"></i></a>
+				</div>
+		</div>
+	</div>
+</header>
+<header class="show-for-small-only" style="min-heigt:60vh !important;">
+<nav class="menu" id="menu">
 			<!-- MENU SMALL -->
-			<div id="ms" class="rows show-for-small-only blanco">
+			<div id="ms" class="rows blanco">
 				<div class="small-12">
 					<div class="small-2 columns blanco">
 					<a href="<?php echo $index;?>" class="button expanded seleccno"><i class="fa fa-home" style="    margin-left: -.5em;"></i></a>
@@ -217,9 +252,7 @@ $rutaFoundation='foundation-6/';
 				</div>
 			</div>
 		</nav>
-	</div>
-	
-	<div class="contenedor">
+			<div class="contenedor">
 		<div class="logo">
 			<!-- CABECERA -->
 			<div class="row">
@@ -231,10 +264,6 @@ $rutaFoundation='foundation-6/';
 					
 				</div>
 			</div>
-			<div id="flechitaHeader">
-					<h5>Bienvenido!</h5>
-					<a href="#servicios" class="tblanco"><i class="fa fa-chevron-down fa-2x"></i></a>
-				</div>
 		</div>
 	</div>
 </header>
