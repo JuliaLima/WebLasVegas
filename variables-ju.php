@@ -24,7 +24,7 @@ $serv[1] = array(
 	'habitaciones' => array(
 		array('Television por cable','fa-desktop'),
 		array('Baño privado','fa-tag'),
-		array('Ventilador de Techo','fa-refresh'),
+		array('Ventilador de Techo','fa-remove fa-spin'),
 		array('Calefactor','fa-fire')
 	)
 );
@@ -64,7 +64,7 @@ $serv[2] = array(
 	'habitaciones' => array(
 		array('Television por cable','fa-desktop'),
 		array('Baño privado','fa-tag'),
-		array('Aire Acondicionado','fa-star'),
+		array('Aire Acondicionado','fa-ge'),
 		array('Calefactor','fa-fire')
 	)
 );
@@ -101,7 +101,7 @@ $serv[3] = array(
 	'habitaciones' => array(
 		array('Television por cable','fa-desktop'),
 		array('Baño privado','fa-tag'),
-		array('Ventilador de Techo','fa-refresh'),
+		array('Ventilador de Techo','fa-remove fa-spin'),
 		array('Calefactor','fa-fire')
 	)
 );

@@ -9,9 +9,9 @@ if (isset($_GET["hot"])) {
 	$hot = $_GET["hot"];}
 else {
 	$hot = 1;}
-include ("variables.php");
+include ("variables-ju.php");
 // PAGINA DE INICIO INDEX
-$index='index-ju.php';
+$index='index-ju-01.php';
 $color1=$color1[$hot];
 $color2=$color2[$hot];
 $color3=$color3[$hot];
@@ -146,6 +146,7 @@ nav{
 	padding-top: 30vh;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
+.margenTituloSmall{padding-top:3em;}
 
 </style>
 <?php
@@ -240,6 +241,7 @@ $rutaFoundation='foundation-6/';
 <a name="servicios"></a>
 <div class="fondo <?php echo $color1; ?>">
 <div class="contenedor">
+<div class="show-for-small-only margenTituloSmall">&nbsp;</div>
 <!-- CUERPO -->
 <!-- SERVICIOS -->
 
@@ -298,6 +300,7 @@ $rutaFoundation='foundation-6/';
 <a name="slide"></a>
 <div class="fondo <?php echo $color2; ?>">
 <div class="contenedor">
+<div class="show-for-small-only margenTituloSmall">&nbsp;</div>
 <!-- GALERIA -->
 
 <div class="row <?php echo $color2; ?>">
@@ -536,6 +539,7 @@ $(document).ready(function() {
 <a name="ubicacion"></a>
 <div class="fondo <?php echo $color1; ?>">
 <div class="contenedor">
+<div class="show-for-small-only margenTituloSmall">&nbsp;</div>
 <!-- UBICACION -->
 
 <div class="row <?php echo $color1; ?>">
@@ -554,6 +558,7 @@ $(document).ready(function() {
 <a name="consulta"></a>
 <div class="fondo2 <?php echo $color2; ?>">
 <div class="contenedor">
+<div class="show-for-small-only margenTituloSmall">&nbsp;</div>
 <!-- CONSULTA -->
 
 <div class="row <?php echo $color2; ?>">

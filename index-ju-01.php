@@ -1,3 +1,4 @@
+<?php $hoteles='lv-05-ju.php'; ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -136,40 +137,47 @@ $rutaFoundation='foundation-6/';
 	<div class="medium-2 columns">&nbsp;</div>
 	<div class="medium-2 columns centrar" id="col1">
 		<div id="im1">
-		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas</h5></i></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas</h5></i></span></a>
 		</div>
 	</div>
 	<div class="medium-1 columns">&nbsp;</div>
 	<div class="medium-2 columns centrar" id="col2">
 		<div id="im2">
-		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas 2</h5></i></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas 2</h5></i></span></a>
 		</div>
 	</div>
 	<div class="medium-1 columns">&nbsp;</div>
 	<div class="medium-2 columns centrar " id="col3">
 		<div id="im3">
-		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Refugio de Luna</h5></i></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Refugio de Luna</h5></i></span></a>
 		</div>
 	</div>
 	<div class="medium-2 columns">&nbsp;</div>
 </div>
 
-<div class="row show-for-small-only" id="cuerpo">
-	<div class="small-12 columns centrar"">
+<div class="row show-for-small-only">
+	<div class="small-12 columns centrar">
 		<div class="margensup">
-		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Las Vegas</h5></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=1">
+			<span>
+				<i class="fa fa-h-square fa-5x tblanco centrar"></i>
+				<br />
+				<h5 style="padding-top: 0rem;">Las Vegas</h5>
+			</span>
+		</a>
 		</div>
 	</div>
-	<div class="small-12 columns centrar"">
+	<div class="small-12 columns centrar">
 		<div class="margensup">
-		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Las Vegas 2</h5></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Las Vegas 2</h5></span></a>
 		</div>
 	</div>
-	<div class="small-12 columns centrar ">
+	<div class="small-12 columns centrar">
 		<div class="margensup">
-		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Refugio de Luna</h5></span></a>
+		<a href="<?php echo $hoteles; ?>?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Refugio de Luna</h5></span></a>
 		</div>
 	</div>
+	<div class="margensup">&nbsp;<br />&nbsp;<br />&nbsp;</div>
 </div>
 
 <footer class="fijo amarillo show-for-medium" id="footer"> 
@@ -180,7 +188,7 @@ $rutaFoundation='foundation-6/';
 	</div>
 </div>
 </footer>
-<footer class="amarillo show-for-small-only" id="footer"> 
+<footer class="amarillo show-for-small-only fijo"> 
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
