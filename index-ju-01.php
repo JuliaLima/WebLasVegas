@@ -73,8 +73,8 @@ span i:hover{
 }
 
 .margensup{
-	margin-top: 3em;
-	margin-bottom: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 div h4{
@@ -113,20 +113,21 @@ $rutaFoundation='foundation-6/';
 
 <!-- CABECERA -->
 <div class="row">
-	<div class="large-12 columns tblanco"><br />
+	<div class="small-12 columns tblanco show-for-medium"><br />
 	<p align="center">
 		<?php
 			echo '<img src="img/hotelLasVegas.png">';
 		?>
 	</p>
 	</div>
-		
+	
 </div>
 
 <!-- CUERPO -->
 <div class="row">
 	<div class="small-12 small-centered medium-7 columns centrar tblanco">
-		<h4>Seleccione el hotel que desee</h4>
+		<h4 class="show-for-medium">Seleccione el hotel que desee</h4>
+		<h4 class="show-for-small-only" style="margin-top: 1em;">Seleccione el hotel que desee</h4>
 	</div>
 
 </div>
@@ -135,7 +136,7 @@ $rutaFoundation='foundation-6/';
 	<div class="medium-2 columns">&nbsp;</div>
 	<div class="medium-2 columns centrar" id="col1">
 		<div id="im1">
-		<span><a href="lv-05.php?hot=1"><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas</h5></i></a></span>
+		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"><br /><h5>Las Vegas</h5></i></span></a>
 		</div>
 	</div>
 	<div class="medium-1 columns">&nbsp;</div>
@@ -152,20 +153,21 @@ $rutaFoundation='foundation-6/';
 	</div>
 	<div class="medium-2 columns">&nbsp;</div>
 </div>
+
 <div class="row show-for-small-only" id="cuerpo">
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas</h5></span></a>
+		<a href="lv-05.php?hot=1"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Las Vegas</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar"">
 		<div class="margensup">
-		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Las Vegas 2</h5></span></a>
+		<a href="lv-05.php?hot=2"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Las Vegas 2</h5></span></a>
 		</div>
 	</div>
 	<div class="small-12 columns centrar ">
 		<div class="margensup">
-		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5>Refugio de Luna</h5></span></a>
+		<a href="lv-05.php?hot=3"><span><i class="fa fa-h-square fa-5x tblanco centrar"></i><br /><h5 style="padding-top: 0rem;">Refugio de Luna</h5></span></a>
 		</div>
 	</div>
 </div>
@@ -182,7 +184,7 @@ $rutaFoundation='foundation-6/';
 <!-- PIE-->
 <div class="row">
 	<div class="large-12 columns text-center" >
-		Grupo Las Vegas - Villa Carlos paz - 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+		Grupo Las Vegas - Villa Carlos paz<br />Cel: (0351) 152455770<br />email: info@hotellasvegas.com.ar
 	</div>
 </div>
 </footer>
