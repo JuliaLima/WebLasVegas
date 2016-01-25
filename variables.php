@@ -14,11 +14,15 @@ $coordenadax[1]='-31.4154127';
 $coordenaday[1]='-64.5094572';
 $telefono[1]='(03541) 42 9453';
 $serv[1]=array(	array('Desayuno','fa-coffee'),
-				array('WiFi en todo el Hotel','fa-wifi'),
-				array('Piscina climatizada','fa-life-saver'),
-				array('Atención al público las 24 hs.','fa-info-circle'),
-				array('Television por cable en todas las habitaciones','fa-desktop')
-			);
+				array('Cena','fa-cutlery'),
+				array('WiFi','fa-wifi'),
+				array('Piscina','fa-life-saver'),
+				array('Cochera','fa-car'),
+				array('Television por cable en todas las habitaciones','fa-desktop'),
+				array('Baño privado','fa-venus-mars'),
+				array('Ventilador de techo','fa-remove fa-spin'),
+				array('Calefacci&oacute;n','fa-sun-o'),
+			);//array('',''),
 
 $hotel[2]='Hotel Las Vegas 2';
 $logo[2]='logoLasVegas2.png';
@@ -35,11 +39,14 @@ $coordenadax[2]='-31.4154127';
 $coordenaday[2]='-64.5094572';
 $telefono[2]='(03541) 42 5433';
 $serv[2]=array(	array('Desayuno','fa-coffee'),
-				array('WiFi en todo el Hotel','fa-wifi'),
-				array('Piscina climatizada','fa-life-saver'),
-				array('Atención al público las 24 hs.','fa-info-circle'),
-				array('Television por cable en todas las habitaciones','fa-desktop')
-			);
+				array('Cena','fa-cutlery'),
+				array('WiFi','fa-wifi'),
+				array('Piscina','fa-life-saver'),
+				array('Television por cable en todas las habitaciones','fa-desktop'),
+				array('Baño privado','fa-venus-mars'),
+				array('Aire Acondicionado','fa-ge'),
+				array('Calefacci&oacute;n','fa-sun-o'),
+			);//array('',''),
 
 $hotel[3]='Hotel Refugio de Luna';
 $logo[3]='logoRefugioDeLuna.png';
@@ -56,9 +63,12 @@ $coordenadax[3]='-31.4154127';
 $coordenaday[3]='-64.5094572';
 $telefono[3]='(03541) 48 7106';
 $serv[3]=array(	array('Desayuno','fa-coffee'),
-				array('WiFi en todo el Hotel','fa-wifi'),
-				array('Piscina climatizada','fa-life-saver'),
-				array('Atención al público las 24 hs.','fa-info-circle'),
-				array('Television por cable en todas las habitaciones','fa-desktop')
-			);
+				array('Cena','fa-cutlery'),
+				array('WiFi','fa-wifi'),
+				array('Cochera','fa-car'),
+				array('Television por cable en todas las habitaciones','fa-desktop'),
+				array('Baño privado','fa-male fa-3x $color3"></i><i class="fa fa-female'),
+				array('Ventilador de techo','fa-remove fa-spin'),
+				array('Calefacci&oacute;n','fa-sun-o'),
+			);//array('',''),
 ?>

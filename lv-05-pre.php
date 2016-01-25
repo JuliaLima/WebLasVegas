@@ -169,7 +169,7 @@ $rutaFoundation='foundation-6/';
 
 </head>
 <body>
-<header class="show-for-medium">
+<header>
 	<nav class="menu" id="menu">
 			<!-- MENU MEDIUM Y LARGE -->
 			<div id="m" class="rows show-for-medium blanco">
@@ -192,35 +192,8 @@ $rutaFoundation='foundation-6/';
 					<a href="#features" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
 				</div>
 			</div>
-		</nav>
-	<div class="contenedor show-for-medium">
-		<style> .logo{min-height: calc(80vh - 40px);} </style>
-		<div class="logo">
-			<!-- CABECERA -->
-			<div class="row">
-				<div class="large-12 columns vcentrar">
-					<!--<p align="center"></p>-->
-					<?php
-					echo '<br /><img src="img/'.$logo[$hot].'">';
-					?>
-					
-				</div>
-			</div>
-			<div id="flechitaHeader">
-				<a href="#servicios" style="color: #fff;">
-					<h6>Bienvenido!</h6>
-					<i class="fa fa-chevron-down"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-
-</header>
-<header class="show-for-small-only" style="min-height: 20vh !important;">
-<style> .logo{min-height: calc(20vh - 40px);} </style>
-	<nav class="menu" id="menu">
 			<!-- MENU SMALL -->
-			<div id="ms" class="rows blanco">
+			<div id="ms" class="rows show-for-small-only blanco">
 				<div class="small-12">
 					<div class="small-2 columns blanco">
 					<a href="<?php echo $index;?>" class="button expanded seleccno"><i class="fa fa-home" style="    margin-left: -.5em;"></i></a>
@@ -245,7 +218,28 @@ $rutaFoundation='foundation-6/';
 		</nav>
 	</div>
 	
-	<div class="contenedor" style="min-height: 30vh !important;">
+	<div class="contenedor show-for-medium">
+		<div class="logo">
+			<!-- CABECERA -->
+			<div class="row">
+				<div class="large-12 columns vcentrar">
+					<!--<p align="center"></p>-->
+					<?php
+					echo '<br /><img src="img/'.$logo[$hot].'">';
+					?>
+					
+				</div>
+			</div>
+			<div id="flechitaHeader">
+				<a href="#servicios" style="color: #fff;">
+					<h6>Bienvenido!</h6>
+					<i class="fa fa-chevron-down"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contenedor show-for-small-only" style="min-height: 50vh !important;">
 		<div class="logo">
 			<!-- CABECERA -->
 			<div class="row">
@@ -266,7 +260,7 @@ $rutaFoundation='foundation-6/';
 <div class="contenedor">
 <!-- CUERPO -->
 <!-- SERVICIOS -->
-<div class="show-for-small-only"><br><br><br></div>
+
 <div class="row">
 <div class="small-12 columns <?php echo $color1; ?>">
 <div class="row"><div class="small-9  small-centered columns">
@@ -297,7 +291,7 @@ $rutaFoundation='foundation-6/';
 <div class="fondo <?php echo $color2; ?>">
 <div class="contenedor">
 <!-- GALERIA -->
-<div class="show-for-small-only"><br><br><br></div>
+
 <div class="row <?php echo $color2; ?>">
 <div class="large-12 columns">
 <!-- Important Owl stylesheet -->
@@ -535,7 +529,7 @@ $(document).ready(function() {
 <div class="fondo <?php echo $color1; ?>">
 <div class="contenedor">
 <!-- UBICACION -->
-<div class="show-for-small-only"><br><br><br></div>
+
 <div class="row <?php echo $color1; ?>">
 <div class="large-12 columns centrar">
 <!--<br class="margensup"/><br class="margensup"/>-->
@@ -553,7 +547,7 @@ $(document).ready(function() {
 <div class="fondo2 <?php echo $color2; ?>">
 <div class="contenedor">
 <!-- CONSULTA -->
-<div class="show-for-small-only"><br><br><br></div>
+
 <div class="row <?php echo $color2; ?>">
 <div class="small-12 medium-9 columns small-centered centrar">
 <!--<br class="margensup"/><br class="margensup"/>-->
