@@ -13,16 +13,31 @@ $direccion[1]='Ameghino 9 (Frente al Cucú';
 $coordenadax[1]='-31.4154127';
 $coordenaday[1]='-64.5094572';
 $telefono[1]='(03541) 42 9453';
-$serv[1]=array(	array('Desayuno','fa-coffee'),
+$serv[1] = array(
+	'general' => array(
+		array('Desayuno','fa-coffee'),
+		array('Cena','fa-cutlery'),
+		array('WiFi en todo el Hotel','fa-wifi'),
+		array('Piscina','fa-life-saver'),
+		array('Cochera','fa-automobile')
+	),
+	'habitaciones' => array(
+		array('Television por cable','fa-desktop'),
+		array('Baño privado','fa-tag'),
+		array('Ventilador de Techo','fa-remove fa-spin'),
+		array('Calefactor','fa-fire')
+	)
+);
+/*$serv[1]=array(	array('Desayuno','fa-coffee'),
 				array('Cena','fa-cutlery'),
-				array('WiFi','fa-wifi'),
-				array('Piscina','fa-life-saver'),
-				array('Cochera','fa-car'),
+				array('WiFi en todo el Hotel','fa-wifi'),
+				array('Piscina climatizada','fa-life-saver'),
+				array('Cochera','fa-automobile'),
 				array('Television por cable en todas las habitaciones','fa-desktop'),
-				array('Baño privado','fa-venus-mars'),
-				array('Ventilador de techo','fa-remove fa-spin'),
-				array('Calefacci&oacute;n','fa-sun-o'),
-			);//array('',''),
+				array('Baño privado','fa-tag'),
+				array('Ventilador de Techo','fa-modx'),
+				array('Calefactor','fa-fire')
+			);*/
 
 $hotel[2]='Hotel Las Vegas 2';
 $logo[2]='logoLasVegas2.png';
@@ -38,15 +53,28 @@ $direccion[2]='José H. Porto 43 (A un paso del Cucú)';
 $coordenadax[2]='-31.4154127';
 $coordenaday[2]='-64.5094572';
 $telefono[2]='(03541) 42 5433';
-$serv[2]=array(	array('Desayuno','fa-coffee'),
-				array('Cena','fa-cutlery'),
-				array('WiFi','fa-wifi'),
-				array('Piscina','fa-life-saver'),
-				array('Television por cable en todas las habitaciones','fa-desktop'),
-				array('Baño privado','fa-venus-mars'),
-				array('Aire Acondicionado','fa-ge'),
-				array('Calefacci&oacute;n','fa-sun-o'),
-			);//array('',''),
+
+$serv[2] = array(
+	'general' => array(
+		array('Desayuno','fa-coffee'),
+		array('Cena','fa-cutlery'),
+		array('WiFi en todo el Hotel','fa-wifi'),
+		array('Piscina','fa-life-saver')
+	),
+	'habitaciones' => array(
+		array('Television por cable','fa-desktop'),
+		array('Baño privado','fa-tag'),
+		array('Aire Acondicionado','fa-ge'),
+		array('Calefactor','fa-fire')
+	)
+);
+
+/*$serv[2]=array(	array('Desayuno','fa-coffee'),
+				array('WiFi en todo el Hotel','fa-wifi'),
+				array('Piscina climatizada','fa-life-saver'),
+				array('Atención al público las 24 hs.','fa-info-circle'),
+				array('Television por cable en todas las habitaciones','fa-desktop')
+			);*/
 
 $hotel[3]='Hotel Refugio de Luna';
 $logo[3]='logoRefugioDeLuna.png';
@@ -62,13 +90,26 @@ $direccion[3]='Roma 276';
 $coordenadax[3]='-31.4154127';
 $coordenaday[3]='-64.5094572';
 $telefono[3]='(03541) 48 7106';
-$serv[3]=array(	array('Desayuno','fa-coffee'),
-				array('Cena','fa-cutlery'),
-				array('WiFi','fa-wifi'),
-				array('Cochera','fa-car'),
-				array('Television por cable en todas las habitaciones','fa-desktop'),
-				array('Baño privado','fa-male fa-3x $color3"></i><i class="fa fa-female'),
-				array('Ventilador de techo','fa-remove fa-spin'),
-				array('Calefacci&oacute;n','fa-sun-o'),
-			);//array('',''),
+
+$serv[3] = array(
+	'general' => array(
+		array('Desayuno','fa-coffee'),
+		array('Cena','fa-cutlery'),
+		array('WiFi en todo el Hotel','fa-wifi'),
+		array('Cochera','fa-automobile')
+	),
+	'habitaciones' => array(
+		array('Television por cable','fa-desktop'),
+		array('Baño privado','fa-tag'),
+		array('Ventilador de Techo','fa-remove fa-spin'),
+		array('Calefactor','fa-fire')
+	)
+);
+
+/*$serv[3]=array(	array('Desayuno','fa-coffee'),
+				array('WiFi en todo el Hotel','fa-wifi'),
+				array('Piscina climatizada','fa-life-saver'),
+				array('Atención al público las 24 hs.','fa-info-circle'),
+				array('Television por cable en todas las habitaciones','fa-desktop')
+			);*/
 ?>

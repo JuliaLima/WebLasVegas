@@ -18,7 +18,7 @@ $serv[1] = array(
 		array('Desayuno','fa-coffee'),
 		array('Cena','fa-cutlery'),
 		array('WiFi en todo el Hotel','fa-wifi'),
-		array('Piscina climatizada','fa-life-saver'),
+		array('Piscina','fa-life-saver'),
 		array('Cochera','fa-automobile')
 	),
 	'habitaciones' => array(
@@ -59,7 +59,7 @@ $serv[2] = array(
 		array('Desayuno','fa-coffee'),
 		array('Cena','fa-cutlery'),
 		array('WiFi en todo el Hotel','fa-wifi'),
-		array('Piscina climatizada','fa-life-saver')
+		array('Piscina','fa-life-saver')
 	),
 	'habitaciones' => array(
 		array('Television por cable','fa-desktop'),

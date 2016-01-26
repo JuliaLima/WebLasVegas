@@ -156,7 +156,13 @@ nav{
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 .margenTituloSmall{padding-top:3em;}
-
+.fijo {
+  position: fixed;
+  bottom: 0;
+  //right: 0;
+  width: 100%;
+  padding: 1rem;
+}
 </style>
 <?php
 $rutaFoundation='foundation-6/';

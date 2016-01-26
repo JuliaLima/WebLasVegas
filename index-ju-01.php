@@ -183,15 +183,22 @@ $rutaFoundation='foundation-6/';
 <footer class="fijo amarillo show-for-medium" id="footer"> 
 <!-- PIE-->
 <div class="row">
-	<div class="large-12 columns text-center" >
-		Grupo Las Vegas - Villa Carlos paz - 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
+	<div class="medium-2 columns" >&nbsp;</div>
+	<div class="medium-8 columns text-center" >
+		Grupo Las Vegas - Villa Carlos paz - 2016
 	</div>
+	<div class="medium-2 columns" >&nbsp;</div>
+</div>
+<div class="row">
+<div class="medium-2 columns" >&nbsp;</div>
+<div class="medium-8 columns text-center" >Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar</div>
+	<div class="medium-2 columns text-center" ><h6><img src="../BusinessInside/isologo_4.png">&nbsp;<small><small style="color:#333;">Diseño&nbsp;Web</small></small></h6></div>
 </div>
 </footer>
 <footer class="amarillo show-for-small-only fijo"> 
 <!-- PIE-->
 <div class="row">
-	<div class="large-12 columns text-center" >
+	<div class="small-12 columns text-center" >
 		Grupo Las Vegas - Villa Carlos paz<br />Cel: (0351) 152455770<br />email: info@hotellasvegas.com.ar
 	</div>
 </div>
