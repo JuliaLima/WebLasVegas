@@ -232,22 +232,22 @@ $rutaFoundation='foundation-6/';
 			<div id="ms" class="rows blanco">
 				<div class="small-12">
 					<div class="small-2 columns blanco">
-					<a href="<?php echo $index;?>" class="button expanded seleccno"><i class="fa fa-home" style="    margin-left: -.5em;"></i></a>
+					<a href="<?php echo $index;?>" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-home" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#servicios" class="button expanded seleccno"><i class="fa fa-info-circle" style="    margin-left: -.5em;"></i></a>
+					<a href="#servicios" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-info-circle" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#slide" class="button expanded seleccno"><i class="fa fa-camera" style="    margin-left: -.5em;"></i></a>
+					<a href="#slide" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-camera" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#ubicacion" class="button expanded seleccno"><i class="fa fa-map-marker" style="    margin-left: -.5em;"></i></a>
+					<a href="#ubicacion" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-map-marker" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#consulta" class="button expanded seleccno"><i class="fa fa-envelope" style="    margin-left: -.5em;"></i></a>
+					<a href="#consulta" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-envelope" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#features" class="button expanded seleccno"><i class="fa fa-facebook-square" style="    margin-left: -.5em;"></i></a>
+					<a href="#features" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-facebook-square" style="    margin-left: -.5em;"></i></a>
 				</div>
 				</div>
 			</div>
