@@ -1,4 +1,4 @@
-<?php $hoteles='lv-05-ju.php'; ?>
+<?php $hoteles='lv.php'; ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,6 +34,13 @@ background-size: cover !important;
   //right: 0;
   width: 100%;
   padding: 1rem;
+}
+.fijo1 {
+  position: fixed;
+  bottom: -.4rem;
+  //right: 0;
+  width: 100%;
+  padding: -2rem;
 }
 
 .margen{
@@ -185,16 +192,17 @@ $rutaFoundation='foundation-6/';
 <div class="row">
 	<div class="medium-2 columns" >&nbsp;</div>
 	<div class="medium-8 columns text-center" >
-		Grupo Las Vegas - Villa Carlos paz - 2016
+		Grupo Las Vegas - Villa Carlos paz - 2016<br />Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar
 	</div>
 	<div class="medium-2 columns" >&nbsp;</div>
 </div>
-<div class="row">
-<div class="medium-2 columns" >&nbsp;</div>
-<div class="medium-8 columns text-center" >Cel: (0351) 152455770 - email: info@hotellasvegas.com.ar</div>
-	<div class="medium-2 columns text-center" ><h6><img src="../BusinessInside/isologo_4.png">&nbsp;<small><small style="color:#333;">Diseño&nbsp;Web</small></small></h6></div>
-</div>
+
 </footer>
+<div class="row fijo1">
+<div class="medium-2 columns" >&nbsp;</div>
+<div class="medium-8 columns text-center" ></div>
+	<div class="medium-2 columns text-center" ><a href="#"><h6><img src="img/isologo_4.png">&nbsp;<small><small style="color:#333;">Diseño&nbsp;Web</small></small></h6></a></div>
+</div>
 <footer class="amarillo show-for-small-only fijo"> 
 <!-- PIE-->
 <div class="row">

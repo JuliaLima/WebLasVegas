@@ -201,7 +201,7 @@ $rutaFoundation='foundation-6/';
 <div class="row fijo1">
 <div class="medium-2 columns" >&nbsp;</div>
 <div class="medium-8 columns text-center" ></div>
-	<div class="medium-2 columns text-center" ><a href="#"><h6><img src="../BusinessInside/isologo_4.png">&nbsp;<small><small style="color:#333;">Diseño&nbsp;Web</small></small></h6></a></div>
+	<div class="medium-2 columns text-center" ><a href="#"><h6><img src="img/isologo_4.png">&nbsp;<small><small style="color:#333;">Diseño&nbsp;Web</small></small></h6></a></div>
 </div>
 <footer class="amarillo show-for-small-only fijo"> 
 <!-- PIE-->
