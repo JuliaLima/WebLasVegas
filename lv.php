@@ -16,6 +16,7 @@ $color1=$color1[$hot];
 $color2=$color2[$hot];
 $color3=$color3[$hot];
 $color4=$color4[$hot];
+$color5=$color5[$hot];
 ?>
 
 <title id="titulo"><?php echo $hotel[$hot]; ?></title>
@@ -207,7 +208,7 @@ $rutaFoundation='foundation-6/';
 					<a href="#consulta" class="button expanded seleccno">CONSULTA</a>
 				</div>
 				<div class="medium-2 large-2 columns blanco">
-					<a href="#features" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
+					<a href="https://www.facebook.com/Hotel-Las-Vegas-157509644277461/?ref=aymt_homepage_panel" class="button expanded seleccno"><i class="socialicon-facebook"></i></a>
 				</div>
 			</div>
 		</nav>
@@ -253,7 +254,7 @@ $rutaFoundation='foundation-6/';
 					<a href="#consulta" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-envelope" style="    margin-left: -.5em;"></i></a>
 				</div>
 				<div class="  small-2 columns blanco">
-					<a href="#features" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-facebook-square" style="    margin-left: -.5em;"></i></a>
+					<a href="https://www.facebook.com/Hotel-Las-Vegas-157509644277461/?ref=aymt_homepage_panel" class="button expanded seleccno" style="margin-left:-0.4687rem"><i class="fa fa-facebook-square" style="    margin-left: -.5em;"></i></a>
 				</div>
 				</div>
 			</div>
@@ -599,7 +600,7 @@ $(document).ready(function() {
 <div class="row <?php echo $color2; ?>">
 <div class="small-12 medium-9 columns small-centered centrar">
 <!--<br class="margensup"/><br class="margensup"/>-->
-<h1>CONSULTA</h1><h5>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 55770</h5>
+<h1>CONSULTA</h1><h5>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono[$hot];?> o al (0351)15 245 5770</h5>
 
 </div>
 </div>
@@ -607,11 +608,11 @@ $(document).ready(function() {
 <div class="small-12 medium-6 columns small-centered medium-centered">
 <form method="post" action="enviar.php">
 
-<label class="tblanco">Nombre y Apellido<input type="text" name="nombre"></label>
-<label class="tblanco">Direcci&oacute;n de e-mail<input type="email" name="email"></label>
-<label class="tblanco">Asunto<input type="text" name="asunto"></label>
-<label class="tblanco">Mensaje<textarea name="mensaje"></textarea></label>
-
+<label class="<?php echo $color5; ?>">Nombre y Apellido<input type="text" name="nombre"></label>
+<label class="<?php echo $color5; ?>">Direcci&oacute;n de e-mail<input type="email" name="email"></label>
+<label class="<?php echo $color5; ?>">Asunto<input type="text" name="asunto"></label>
+<label class="<?php echo $color5; ?>">Mensaje<textarea name="mensaje"></textarea></label>
+<input type="hidden" name="hot" value="<?php echo $hot; ?>">
 <input type="submit" class="button float-right <?php echo $color4; ?>" value="Enviar">
 <span id='contenido'></span>
 <!--<button type="button" onclick="cargarContenido('enviar1.php')" class="alert button float-right">Enviar</button>-->

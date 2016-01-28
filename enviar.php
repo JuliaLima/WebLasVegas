@@ -1,13 +1,16 @@
 <?php
+include ("variables.php");
 //echo'Enviando.....<br />';
 // Varios destinatarios
-$para  = 'jpsollender@gmail.com' . ', ';
+$para  = 'hotellasvegascba@gmail.com' . ', ';
 $para .= 'jpsollender@gmail.com';
 $para1 = $para;//'jpsollender@gmail.com';
-$subject = $_POST["asunto"].' (desde HLV)';
 
+$lugar= $hotel[$_POST["hot"]];
+$subject = $_POST["asunto"].' (desde '.$lugar.')';
+//echo $_POST["hot"].'---'.$_POST["nombre"].'---'.$_POST["email"].'<br />';
 $mensaje = '
-<html><head><title>Consulta de '.$_POST["nombre"].' desde HLV</title></head><body>
+<html><head><title>Consulta de '.$_POST["nombre"].' desde '.$lugar.'</title></head><body>
 <table>
 <tr bgcolor="#FFf6dd"><td>Nombre:</td><td>'.$_POST["nombre"].'</td></tr>
 <tr bgcolor="#eee"><td>E-Mail:</td><td> '.$_POST["email"]. '</td></tr>
@@ -16,7 +19,7 @@ $mensaje = '
 </body></html>
 ';
 
-//$mensaje=convertir($mensaje);
+//echo $mensaje;
 // Para enviar un correo HTML mail, la cabecera Content-type debe fijarse
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -44,6 +47,7 @@ if (mail($para, $subject, $mensaje, $cabeceras)){echo'Mensaje 2 enviado';}else{e
 mail($para1, $subject, $mensaje1);
 mail($para, $subject, $mensaje, $cabeceras);
 echo '<script type="text/javascript">		
-		location.href="lv1.php";
+		location.href="lv.php?hot='.$_POST["hot"].'";
 		</script>';
+/*		*/
 ?>
