@@ -37,23 +37,32 @@ tbody tr:nth-child(even) {background-color: transparent !important;}
 .trojo{color: #9b1b20;}
 
 .margensup {height:50px;}
-.enviar{
-	background-color: #f3c517 !important;
-	color: #000 !important;
+#correo .button {
+	background-color: #9b1b20 !important;
+	color: #fff !important;
 }
-.enviar: hover{
-	background-color: #f5c719 !important;
-	color: #333 !important;
+#correo .button:hover {
+	background-color: #7b0b00 !important;
+	color: #ff0 !important;
 }
-.enviar1{
+/*
+.enviar1, .enviar3 {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+.enviar1: hover, .enviar3: hover{
+	background-color: #f0f !important;
+	color: #f0f !important;
+}
+.enviar2{
 	background-color: #000 !important;
 	color: #f3c517 !important;
 }
-.enviar1: hover{
+.enviar2: hover{
 	background-color: #9b1b20 !important;
 	color: #333 !important;
 }
-
+*/
 .expande{width:100%; height: 4px;}
 .centrar{text-align:center;}
 .seleccionado{
@@ -98,6 +107,7 @@ background: #fff !important;
 .button:hover{
 	color: #f7c713 !important;
 }
+/*
 form > .enviar{
 	background-color: #f3c517 !important;
 	color: #000 !important;
@@ -114,7 +124,7 @@ form > .enviar1:hover{
 	background-color: #f00 !important;
 	color: #fff !important;
 }
-
+*/
 .selecc{
 	color: #f7c713 !important;
 	border-bottom-style: solid !important;
@@ -605,20 +615,21 @@ $(document).ready(function() {
 </div>
 </div>
 <div class="row <?php echo $color2; ?>">
-<div class="small-12 medium-6 columns small-centered medium-centered">
-<form method="post" action="enviar.php">
+<div class="small-12 medium-6 columns small-centered medium-centered" id="correo">
+<!--<form method="post" action="enviar.php"></form>-->
 
-<label class="<?php echo $color5; ?>">Nombre y Apellido<input type="text" name="nombre"></label>
-<label class="<?php echo $color5; ?>">Direcci&oacute;n de e-mail<input type="email" name="email"></label>
-<label class="<?php echo $color5; ?>">Asunto<input type="text" name="asunto"></label>
-<label class="<?php echo $color5; ?>">Mensaje<textarea name="mensaje"></textarea></label>
-<input type="hidden" name="hot" value="<?php echo $hot; ?>">
-<input type="submit" class="button float-right <?php echo $color4; ?>" value="Enviar">
-<span id='contenido'></span>
-<!--<button type="button" onclick="cargarContenido('enviar1.php')" class="alert button float-right">Enviar</button>-->
+<label class="<?php echo $color5; ?>">Nombre y Apellido<input type="text" id="nombre"></label>
+<label class="<?php echo $color5; ?>">Direcci&oacute;n de e-mail<input type="email" id="email"></label>
+<label class="<?php echo $color5; ?>">Asunto<input type="text" id="asunto"></label>
+<label class="<?php echo $color5; ?>">Mensaje<textarea id="mensaje"></textarea></label>
+<input type="hidden" id="hot" value="<?php echo $hot; ?>">
+<!--<input type="submit" class="button float-right " value="Enviar">-->
+<div id='contenido'class="column small-7 medium8 float-left"> </div><input type="submit" class="button float-right " href="javascript:;" onclick="realizaProceso($('#nombre').val(), $('#email').val(), $('#asunto').val(), $('#mensaje').val(), $('#hot').val());return false;" value="Enviar"/>
+
+
     
 
-</form>
+
 
 </div>
 </div>
@@ -628,6 +639,28 @@ $(document).ready(function() {
 
 
 </body>
+<script>
+function realizaProceso(valorCaja1, valorCaja2, valorCaja3, valorCaja4, valorCaja5){
+        var parametros = {
+                "nombre" : valorCaja1,
+                "email" : valorCaja2,
+				"asunto" : valorCaja3,
+				"mensaje" : valorCaja4,
+				"hot" : valorCaja5
+        };
+        $.ajax({
+                data:  parametros,
+                url:   'enviar2.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#contenido").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#contenido").html(response);
+                }
+        });
+}
+</script>
 <script type='text/javascript'>
     // Funcion para cargar un contenido en un div
     function cargarContenido(pagina)
